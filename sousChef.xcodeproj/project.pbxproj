@@ -7,8 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		946FDA171F75F23900295866 /* RecipeProcedureStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA0F1F75F23700295866 /* RecipeProcedureStepCell.swift */; };
+		946FDA181F75F23900295866 /* RecipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA101F75F23700295866 /* RecipeDetailVC.swift */; };
+		946FDA191F75F23900295866 /* String+ValidCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA111F75F23700295866 /* String+ValidCommands.swift */; };
+		946FDA1A1F75F23900295866 /* RecipeOverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA121F75F23700295866 /* RecipeOverviewVC.swift */; };
+		946FDA1B1F75F23900295866 /* RecipeProcedureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA131F75F23800295866 /* RecipeProcedureVC.swift */; };
+		946FDA1C1F75F23900295866 /* EnglishLanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA141F75F23800295866 /* EnglishLanguageModel.swift */; };
+		946FDA1D1F75F23900295866 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA151F75F23800295866 /* IngredientCell.swift */; };
+		946FDA1E1F75F23900295866 /* RecipeOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA161F75F23800295866 /* RecipeOverviewCell.swift */; };
+		946FDA4F1F75F36300295866 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946FDA4E1F75F36300295866 /* AudioToolbox.framework */; };
+		946FDA511F75F36A00295866 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946FDA501F75F36A00295866 /* AVFoundation.framework */; };
+		946FDA571F75F5C400295866 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 946FDA201F75F28F00295866 /* AcousticModelEnglish.bundle */; };
+		946FDA591F75F86400295866 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946FDA581F75F86400295866 /* OpenEars.framework */; };
+		946FDA5B1F75F86C00295866 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946FDA5A1F75F86C00295866 /* Slt.framework */; };
 		94C128CC1F75F09F008EB91E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C128CB1F75F09F008EB91E /* AppDelegate.swift */; };
-		94C128CE1F75F09F008EB91E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C128CD1F75F09F008EB91E /* ViewController.swift */; };
 		94C128D11F75F09F008EB91E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C128CF1F75F09F008EB91E /* Main.storyboard */; };
 		94C128D31F75F09F008EB91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C128D21F75F09F008EB91E /* Assets.xcassets */; };
 		94C128D61F75F09F008EB91E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C128D41F75F09F008EB91E /* LaunchScreen.storyboard */; };
@@ -34,9 +46,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		946FDA0F1F75F23700295866 /* RecipeProcedureStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProcedureStepCell.swift; sourceTree = "<group>"; };
+		946FDA101F75F23700295866 /* RecipeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailVC.swift; sourceTree = "<group>"; };
+		946FDA111F75F23700295866 /* String+ValidCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ValidCommands.swift"; sourceTree = "<group>"; };
+		946FDA121F75F23700295866 /* RecipeOverviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOverviewVC.swift; sourceTree = "<group>"; };
+		946FDA131F75F23800295866 /* RecipeProcedureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProcedureVC.swift; sourceTree = "<group>"; };
+		946FDA141F75F23800295866 /* EnglishLanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishLanguageModel.swift; sourceTree = "<group>"; };
+		946FDA151F75F23800295866 /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
+		946FDA161F75F23800295866 /* RecipeOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOverviewCell.swift; sourceTree = "<group>"; };
+		946FDA201F75F28F00295866 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		946FDA4E1F75F36300295866 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		946FDA501F75F36A00295866 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		946FDA561F75F51800295866 /* OpenEarsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenEarsHeader.h; sourceTree = "<group>"; };
+		946FDA581F75F86400295866 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		946FDA5A1F75F86C00295866 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 		94C128C81F75F09F008EB91E /* sousChef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sousChef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C128CB1F75F09F008EB91E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94C128CD1F75F09F008EB91E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94C128D01F75F09F008EB91E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94C128D21F75F09F008EB91E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94C128D51F75F09F008EB91E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +79,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946FDA5B1F75F86C00295866 /* Slt.framework in Frameworks */,
+				946FDA591F75F86400295866 /* OpenEars.framework in Frameworks */,
+				946FDA511F75F36A00295866 /* AVFoundation.framework in Frameworks */,
+				946FDA4F1F75F36300295866 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +103,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		946FDA4D1F75F36200295866 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				946FDA5A1F75F86C00295866 /* Slt.framework */,
+				946FDA581F75F86400295866 /* OpenEars.framework */,
+				946FDA201F75F28F00295866 /* AcousticModelEnglish.bundle */,
+				946FDA501F75F36A00295866 /* AVFoundation.framework */,
+				946FDA4E1F75F36300295866 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		94C128BF1F75F09F008EB91E = {
 			isa = PBXGroup;
 			children = (
+				946FDA561F75F51800295866 /* OpenEarsHeader.h */,
 				94C128CA1F75F09F008EB91E /* sousChef */,
 				94C128DF1F75F09F008EB91E /* sousChefTests */,
 				94C128EA1F75F09F008EB91E /* sousChefUITests */,
 				94C128C91F75F09F008EB91E /* Products */,
+				946FDA4D1F75F36200295866 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +141,15 @@
 			isa = PBXGroup;
 			children = (
 				94C128CB1F75F09F008EB91E /* AppDelegate.swift */,
-				94C128CD1F75F09F008EB91E /* ViewController.swift */,
 				94C128CF1F75F09F008EB91E /* Main.storyboard */,
+				946FDA141F75F23800295866 /* EnglishLanguageModel.swift */,
+				946FDA151F75F23800295866 /* IngredientCell.swift */,
+				946FDA101F75F23700295866 /* RecipeDetailVC.swift */,
+				946FDA161F75F23800295866 /* RecipeOverviewCell.swift */,
+				946FDA121F75F23700295866 /* RecipeOverviewVC.swift */,
+				946FDA0F1F75F23700295866 /* RecipeProcedureStepCell.swift */,
+				946FDA131F75F23800295866 /* RecipeProcedureVC.swift */,
+				946FDA111F75F23700295866 /* String+ValidCommands.swift */,
 				94C128D21F75F09F008EB91E /* Assets.xcassets */,
 				94C128D41F75F09F008EB91E /* LaunchScreen.storyboard */,
 				94C128D71F75F09F008EB91E /* Info.plist */,
@@ -233,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C128D61F75F09F008EB91E /* LaunchScreen.storyboard in Resources */,
+				946FDA571F75F5C400295866 /* AcousticModelEnglish.bundle in Resources */,
 				94C128D31F75F09F008EB91E /* Assets.xcassets in Resources */,
 				94C128D11F75F09F008EB91E /* Main.storyboard in Resources */,
 			);
@@ -259,8 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94C128CE1F75F09F008EB91E /* ViewController.swift in Sources */,
+				946FDA1B1F75F23900295866 /* RecipeProcedureVC.swift in Sources */,
+				946FDA191F75F23900295866 /* String+ValidCommands.swift in Sources */,
+				946FDA1D1F75F23900295866 /* IngredientCell.swift in Sources */,
+				946FDA171F75F23900295866 /* RecipeProcedureStepCell.swift in Sources */,
+				946FDA1C1F75F23900295866 /* EnglishLanguageModel.swift in Sources */,
 				94C128CC1F75F09F008EB91E /* AppDelegate.swift in Sources */,
+				946FDA181F75F23900295866 /* RecipeDetailVC.swift in Sources */,
+				946FDA1E1F75F23900295866 /* RecipeOverviewCell.swift in Sources */,
+				946FDA1A1F75F23900295866 /* RecipeOverviewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,11 +485,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 58D954W93X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = sousChef/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.sousChef;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/RaymondKim/Desktop/CS_Projects/sousChef/sousChef/OpenEarsHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,11 +507,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 58D954W93X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = sousChef/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.sousChef;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/RaymondKim/Desktop/CS_Projects/sousChef/sousChef/OpenEarsHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
