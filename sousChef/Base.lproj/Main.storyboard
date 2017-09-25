@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yha-0Q-8a2">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,13 +14,13 @@
         <!--Recipes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RecipeOverviewVC" customModule="cookingCompanion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecipeOverviewVC" customModule="sousChef" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TL1-U4-icm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="arz-5b-Qbf">
                                     <size key="itemSize" width="375" height="131"/>
@@ -29,7 +29,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recipeOverviewCell" id="qo5-v0-TyP" customClass="RecipeOverviewCell" customModule="cookingCompanion" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recipeOverviewCell" id="qo5-v0-TyP" customClass="RecipeOverviewCell" customModule="sousChef" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -43,7 +43,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zht-Da-9bU">
-                                                    <rect key="frame" x="256" y="56" width="103" height="19.5"/>
+                                                    <rect key="frame" x="256" y="56.000000000000007" width="103" height="19.666666666666679"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -89,13 +89,13 @@
         <!--Recipe DetailVC-->
         <scene sceneID="8TO-7D-cx0">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="XIm-Ul-QpL" customClass="RecipeDetailVC" customModule="cookingCompanion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XIm-Ul-QpL" customClass="RecipeDetailVC" customModule="sousChef" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EIx-cz-RMG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZD-cB-7zS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="766"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3D-Qy-Zeo">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
@@ -107,25 +107,25 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gi9-y0-m64">
-                                                <rect key="frame" x="122.5" y="252" width="130" height="27.5"/>
+                                                <rect key="frame" x="122.66666666666669" y="252.00000000000003" width="130" height="27.666666666666714"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KC-Q3-Pn4">
-                                                <rect key="frame" x="140.5" y="348.5" width="93.5" height="21"/>
+                                                <rect key="frame" x="140.66666666666663" y="348.66666666666669" width="93.333333333333343" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Approx. Time: 1 hour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SP-tk-7ug">
-                                                <rect key="frame" x="105.5" y="303.5" width="164" height="21"/>
+                                                <rect key="frame" x="105.66666666666669" y="303.66666666666669" width="164" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZnP-VO-WOf">
-                                                <rect key="frame" x="48" y="393.5" width="279" height="326.5"/>
+                                                <rect key="frame" x="48" y="393.66666666666674" width="279" height="326.33333333333326"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="2ex-Kc-pqQ">
                                                     <size key="itemSize" width="279" height="32"/>
@@ -134,7 +134,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ingredientCell" id="W8B-0Q-fk9" customClass="IngredientCell" customModule="cookingCompanion" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ingredientCell" id="W8B-0Q-fk9" customClass="IngredientCell" customModule="sousChef" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="279" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -142,7 +142,7 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Ingredient Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="e6f-tt-KtF">
-                                                                    <rect key="frame" x="8" y="7" width="263" height="19.5"/>
+                                                                    <rect key="frame" x="8" y="7.0000000000000018" width="263" height="19.666666666666671"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -217,7 +217,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kad-Oj-kfQ"/>
                     </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="oN8-vn-80K"/>
                     <size key="freeformSize" width="375" height="800"/>
                     <connections>
                         <outlet property="durationLabel" destination="1SP-tk-7ug" id="sb4-gf-NAm"/>
@@ -233,13 +233,13 @@
         <!--Recipe ProcedureVC-->
         <scene sceneID="4Cc-IK-02h">
             <objects>
-                <viewController id="Na6-5L-lyL" customClass="RecipeProcedureVC" customModule="cookingCompanion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Na6-5L-lyL" customClass="RecipeProcedureVC" customModule="sousChef" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Qb-Jg-0uJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tnm-Bn-xFS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Je1-q4-pED">
                                     <size key="itemSize" width="375" height="388"/>
@@ -248,7 +248,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recipeProcedureCell" id="L3b-SK-tqp" customClass="RecipeProcedureStepCell" customModule="cookingCompanion" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recipeProcedureCell" id="L3b-SK-tqp" customClass="RecipeProcedureStepCell" customModule="sousChef" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="388"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -300,7 +300,7 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHQ-G8-cdV">
-                                <rect key="frame" x="329" y="36" width="30" height="30"/>
+                                <rect key="frame" x="329" y="60" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="YXT-Nw-ilk"/>
                                     <constraint firstAttribute="height" constant="30" id="acl-Aq-ZaO"/>
@@ -314,14 +314,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpeechOff" translatesAutoresizingMaskIntoConstraints="NO" id="qJ3-pa-1B0">
-                                <rect key="frame" x="32" y="36" width="21" height="30"/>
+                                <rect key="frame" x="32" y="60" width="21" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="21" id="3ds-yf-96f"/>
                                     <constraint firstAttribute="height" constant="30" id="knE-Aq-Hhj"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSw-LP-ZK7">
-                                <rect key="frame" x="172.5" y="36" width="30" height="30"/>
+                                <rect key="frame" x="172.66666666666666" y="60" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bYb-Ua-0CM"/>
                                     <constraint firstAttribute="width" constant="30" id="qFt-u6-iJs"/>
@@ -362,8 +362,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yha-0Q-8a2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F6w-CZ-AvD">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="F6w-CZ-AvD">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -382,4 +382,3 @@
         <image name="charsiupork" width="1024" height="683"/>
     </resources>
 </document>
-
