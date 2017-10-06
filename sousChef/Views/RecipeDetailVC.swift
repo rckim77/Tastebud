@@ -19,13 +19,20 @@ class RecipeDetailVC: UIViewController {
         
     }
     
-    var recipeName: String!
+    var viewModel: RecipeDetailViewModelWithRecipe? {
+        didSet {
+            guard let recipe = viewModel else { return }
+            
+            recipeNameLabel.text = recipe.title
+            durationLabel.text = recipe.duration
+            ingredientsTitleLabel.text = "Ingredients"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        recipeNameLabel.text = recipeName
-        durationLabel.text = "Total: 9 hrs. Active: 1 hr"
+//        durationLabel.text = "Total: 9 hrs. Active: 1 hr"
     }
 
 }
@@ -37,7 +44,7 @@ extension RecipeDetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return viewModel?.ingredients.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

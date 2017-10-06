@@ -17,8 +17,15 @@ class RecipeOverviewVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let recipe = RecipeModel(imageURL: "", title: "Char Siu Pork")
-        viewModel = RecipeOverviewViewModelWithRecipes([recipe])
+        let ingredients = [IngredientModel(title: "pork shoulder, boneless", measurement: "2kg"),
+                           IngredientModel(title: "salt", measurement: "20g"),
+                           IngredientModel(title: "char siu sauce (e.g., Lee Kum Kee)", measurement: "230g"),
+                           IngredientModel(title: "spicy mustard, for garnish", measurement: "300g"),
+                           IngredientModel(title: "green onions, for garnish", measurement: "150g"),
+                           IngredientModel(title: "sesame seeds, for garnish", measurement: "75g")]
+        
+        let recipeDetailViewModel = RecipeDetailViewModelWithRecipe(RecipeModel(imageURL: "", title: "Char Siu Pork", duration: "9 hrs", ingredients: ingredients))
+        viewModel = RecipeOverviewViewModelWithRecipes([recipeDetailViewModel])
         
         // bind using RxSwift
     }
@@ -27,8 +34,9 @@ class RecipeOverviewVC: UIViewController {
         if segue.identifier == "toRecipeDetailVC" {
             let destinationVC = segue.destination as! RecipeDetailVC
             let sender = sender as! RecipeOverviewCell
-            
-            destinationVC.recipeName = sender.recipeNameLabel.text
+            if let senderIndex = collectionView.indexPath(for: sender)?.row {
+                destinationVC.viewModel = viewModel?.recipes[senderIndex]
+            }
         }
     }
 

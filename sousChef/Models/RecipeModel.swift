@@ -12,9 +12,13 @@ class RecipeModel {
     
     var imageURL: String?
     var title: String
+    var duration: String
+    var ingredients: [IngredientModel]
     
-    init(imageURL: String?, title: String) {
+    init(imageURL: String?, title: String, duration: String, ingredients: [IngredientModel]) {
         self.imageURL = ""
         self.title = "Char Siu Pork"
+        self.duration = duration
+        self.ingredients = ingredients
     }
 }

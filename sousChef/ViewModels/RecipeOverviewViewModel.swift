@@ -9,14 +9,14 @@
 import UIKit
 
 protocol RecipeOverviewViewModel {
-    var recipes: [RecipeModel] { get }
+    var recipes: [RecipeDetailViewModelWithRecipe] { get }
 }
 
 class RecipeOverviewViewModelWithRecipes: NSObject, RecipeOverviewViewModel {
     
-    var recipes: [RecipeModel]
+    var recipes: [RecipeDetailViewModelWithRecipe]
     
-    init(_ recipes: [RecipeModel]) {
+    init(_ recipes: [RecipeDetailViewModelWithRecipe]) {
         self.recipes = recipes
         
         // network call to get recipe data
