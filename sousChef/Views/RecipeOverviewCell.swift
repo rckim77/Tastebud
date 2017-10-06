@@ -12,4 +12,15 @@ class RecipeOverviewCell: UICollectionViewCell {
     
     @IBOutlet var recipeNameLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
+    
+    var recipeOverview: RecipeModel? {
+        didSet {
+            guard let recipeOverview = recipeOverview else { return }
+            
+            recipeNameLabel.text = recipeOverview.title
+            // image
+        }
+    }
+    
+    
 }

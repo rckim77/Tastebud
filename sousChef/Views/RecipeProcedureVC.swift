@@ -207,39 +207,39 @@ extension RecipeProcedureVC: UICollectionViewDelegate, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recipeProcedureCell", for: indexPath) as! RecipeProcedureStepCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeProcedureHeaderSubMediaCell.identifier, for: indexPath) as! RecipeProcedureHeaderSubMediaCell
         
         switch indexPath.row {
         case 0:
-            cell.directionsLabel.text = "1. Heat sous vide to 140F (or 60C) in a container of water."
-            cell.descriptionLabel.text = ""
+            cell.headerLabel.text = "1. Heat sous vide to 140F (or 60C) in a container of water."
+            cell.subheaderLabel.text = ""
             cell.imageView.image = #imageLiteral(resourceName: "charsiuporksousvide")
         case 1:
-            cell.directionsLabel.text = "2. Slice pork into steaks"
-            cell.descriptionLabel.text = "Slice pork shoulder into steaks about 1.5\" (38mm) thick."
-            cell.imageView.isHidden = true
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeProcedureHeaderSubCell.identifier, for: indexPath) as! RecipeProcedureHeaderSubCell
+            cell.headerLabel.text = "2. Slice pork into steaks"
+            cell.subheaderLabel.text = "Slice pork shoulder into steaks about 1.5\" (38mm) thick."
         case 2:
-            cell.directionsLabel.text = "3. Season pork"
-            cell.descriptionLabel.text = "Season pork with salt and let rest, allowing salt to dissolve into meat for 20 to 30 minutes."
+            cell.headerLabel.text = "3. Season pork"
+            cell.subheaderLabel.text = "Season pork with salt and let rest, allowing salt to dissolve into meat for 20 to 30 minutes."
             cell.imageView.image = #imageLiteral(resourceName: "charsiuporksalt")
         case 3:
-            cell.directionsLabel.text = "4. Bag it up"
-            cell.descriptionLabel.text = "Fill sous vide bag with sauce, then add meat. You can cook meat right away or store in the fridge for up to 24 hours."
+            cell.headerLabel.text = "4. Bag it up"
+            cell.subheaderLabel.text = "Fill sous vide bag with sauce, then add meat. You can cook meat right away or store in the fridge for up to 24 hours."
             cell.imageView.image = #imageLiteral(resourceName: "charsiuporkbag")
         case 4:
-            cell.directionsLabel.text = "5. Cook for 8 hours"
-            cell.descriptionLabel.text = "Lower the bag into the cooking water and cook for 8 hours."
+            cell.headerLabel.text = "5. Cook for 8 hours"
+            cell.subheaderLabel.text = "Lower the bag into the cooking water and cook for 8 hours."
             cell.imageView.image = #imageLiteral(resourceName: "charsiuporkbag2")
         case 5:
-            cell.directionsLabel.text = "6. Finish"
-            cell.descriptionLabel.text = "Sear steaks on each side until they reach a deep mahogany color. Remove right away."
+            cell.headerLabel.text = "6. Finish"
+            cell.subheaderLabel.text = "Sear steaks on each side until they reach a deep mahogany color. Remove right away."
             cell.imageView.image = #imageLiteral(resourceName: "charsiuporkfinish")
         case 6:
-            cell.directionsLabel.text = "7. Serve"
-            cell.descriptionLabel.text = "Serve your pork right away–we like to offer it alongside little dipping bowls of mustard, green onions, and sesame seeds."
+            cell.headerLabel.text = "7. Serve"
+            cell.subheaderLabel.text = "Serve your pork right away–we like to offer it alongside little dipping bowls of mustard, green onions, and sesame seeds."
             cell.imageView.image = #imageLiteral(resourceName: "charsiupork")
         default:
-            cell.directionsLabel.text = ""
+            cell.headerLabel.text = ""
             cell.imageView.isHidden = true
         }
         

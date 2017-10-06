@@ -21,16 +21,13 @@ class sousChefTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testRecipeOverviewViewModelWithCharSiuRecipes() {
+        let charSiuRecipeModel = RecipeModel(imageURL: "", title: "Char Siu Pork")
+        let charSiuRecipeViewModel = RecipeOverviewViewModelWithRecipes([charSiuRecipeModel])
+        
+        XCTAssertEqual(charSiuRecipeViewModel.recipes[0].imageURL, "")
+        XCTAssertEqual(charSiuRecipeViewModel.recipes[0].title, "Char Siu Pork")
+        
     }
     
 }

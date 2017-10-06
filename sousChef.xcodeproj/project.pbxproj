@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		946FDA171F75F23900295866 /* RecipeProcedureStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA0F1F75F23700295866 /* RecipeProcedureStepCell.swift */; };
+		8FD69FAE6103BD1FC194E51F /* Pods_sousChef.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1A8E5113CC61F4B853BA48 /* Pods_sousChef.framework */; };
+		946FDA171F75F23900295866 /* RecipeProcedureHeaderSubMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA0F1F75F23700295866 /* RecipeProcedureHeaderSubMediaCell.swift */; };
 		946FDA181F75F23900295866 /* RecipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA101F75F23700295866 /* RecipeDetailVC.swift */; };
 		946FDA191F75F23900295866 /* String+ValidCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA111F75F23700295866 /* String+ValidCommands.swift */; };
 		946FDA1A1F75F23900295866 /* RecipeOverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA121F75F23700295866 /* RecipeOverviewVC.swift */; };
@@ -20,6 +21,11 @@
 		946FDA571F75F5C400295866 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 946FDA201F75F28F00295866 /* AcousticModelEnglish.bundle */; };
 		946FDA591F75F86400295866 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946FDA581F75F86400295866 /* OpenEars.framework */; };
 		946FDA5B1F75F86C00295866 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946FDA5A1F75F86C00295866 /* Slt.framework */; };
+		947DD19C1F87CA3400CD53EE /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947DD19B1F87CA3400CD53EE /* RecipeModel.swift */; };
+		947DD1A41F87D28E00CD53EE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 947DD1A31F87D28E00CD53EE /* Podfile */; };
+		94C108481F872B0400887B66 /* RecipeProcedureHeaderSubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C108471F872B0400887B66 /* RecipeProcedureHeaderSubCell.swift */; };
+		94C1084A1F872BA800887B66 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C108491F872BA800887B66 /* UICollectionViewCell+Extensions.swift */; };
+		94C1084C1F872D6400887B66 /* RecipeOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C1084B1F872D6400887B66 /* RecipeOverviewViewModel.swift */; };
 		94C128CC1F75F09F008EB91E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C128CB1F75F09F008EB91E /* AppDelegate.swift */; };
 		94C128D11F75F09F008EB91E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C128CF1F75F09F008EB91E /* Main.storyboard */; };
 		94C128D31F75F09F008EB91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C128D21F75F09F008EB91E /* Assets.xcassets */; };
@@ -46,7 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		946FDA0F1F75F23700295866 /* RecipeProcedureStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProcedureStepCell.swift; sourceTree = "<group>"; };
+		1F2F240768BBCD282D63A08C /* Pods-sousChef.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sousChef.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sousChef/Pods-sousChef.debug.xcconfig"; sourceTree = "<group>"; };
+		7B1A8E5113CC61F4B853BA48 /* Pods_sousChef.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sousChef.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		946FDA0F1F75F23700295866 /* RecipeProcedureHeaderSubMediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProcedureHeaderSubMediaCell.swift; sourceTree = "<group>"; };
 		946FDA101F75F23700295866 /* RecipeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailVC.swift; sourceTree = "<group>"; };
 		946FDA111F75F23700295866 /* String+ValidCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ValidCommands.swift"; sourceTree = "<group>"; };
 		946FDA121F75F23700295866 /* RecipeOverviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOverviewVC.swift; sourceTree = "<group>"; };
@@ -60,6 +68,11 @@
 		946FDA561F75F51800295866 /* OpenEarsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenEarsHeader.h; sourceTree = "<group>"; };
 		946FDA581F75F86400295866 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
 		946FDA5A1F75F86C00295866 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		947DD19B1F87CA3400CD53EE /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		947DD1A31F87D28E00CD53EE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94C108471F872B0400887B66 /* RecipeProcedureHeaderSubCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProcedureHeaderSubCell.swift; sourceTree = "<group>"; };
+		94C108491F872BA800887B66 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		94C1084B1F872D6400887B66 /* RecipeOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOverviewViewModel.swift; sourceTree = "<group>"; };
 		94C128C81F75F09F008EB91E /* sousChef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sousChef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C128CB1F75F09F008EB91E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94C128D01F75F09F008EB91E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +85,7 @@
 		94C128E71F75F09F008EB91E /* sousChefUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sousChefUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C128EB1F75F09F008EB91E /* sousChefUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sousChefUITests.swift; sourceTree = "<group>"; };
 		94C128ED1F75F09F008EB91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA2C2997F3B12591A26CB648 /* Pods-sousChef.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sousChef.release.xcconfig"; path = "Pods/Target Support Files/Pods-sousChef/Pods-sousChef.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +97,7 @@
 				946FDA591F75F86400295866 /* OpenEars.framework in Frameworks */,
 				946FDA511F75F36A00295866 /* AVFoundation.framework in Frameworks */,
 				946FDA4F1F75F36300295866 /* AudioToolbox.framework in Frameworks */,
+				8FD69FAE6103BD1FC194E51F /* Pods_sousChef.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,19 +126,62 @@
 				946FDA201F75F28F00295866 /* AcousticModelEnglish.bundle */,
 				946FDA501F75F36A00295866 /* AVFoundation.framework */,
 				946FDA4E1F75F36300295866 /* AudioToolbox.framework */,
+				7B1A8E5113CC61F4B853BA48 /* Pods_sousChef.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		947DD1A51F87D5A200CD53EE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				94C1084B1F872D6400887B66 /* RecipeOverviewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		947DD1A61F87D5B000CD53EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				946FDA141F75F23800295866 /* EnglishLanguageModel.swift */,
+				947DD19B1F87CA3400CD53EE /* RecipeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		947DD1A71F87D5BF00CD53EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				946FDA151F75F23800295866 /* IngredientCell.swift */,
+				946FDA101F75F23700295866 /* RecipeDetailVC.swift */,
+				946FDA121F75F23700295866 /* RecipeOverviewVC.swift */,
+				946FDA161F75F23800295866 /* RecipeOverviewCell.swift */,
+				946FDA0F1F75F23700295866 /* RecipeProcedureHeaderSubMediaCell.swift */,
+				94C108471F872B0400887B66 /* RecipeProcedureHeaderSubCell.swift */,
+				946FDA131F75F23800295866 /* RecipeProcedureVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		947DD1A81F87D5D200CD53EE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				946FDA111F75F23700295866 /* String+ValidCommands.swift */,
+				94C108491F872BA800887B66 /* UICollectionViewCell+Extensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		94C128BF1F75F09F008EB91E = {
 			isa = PBXGroup;
 			children = (
+				947DD1A31F87D28E00CD53EE /* Podfile */,
 				946FDA561F75F51800295866 /* OpenEarsHeader.h */,
 				94C128CA1F75F09F008EB91E /* sousChef */,
 				94C128DF1F75F09F008EB91E /* sousChefTests */,
 				94C128EA1F75F09F008EB91E /* sousChefUITests */,
 				94C128C91F75F09F008EB91E /* Products */,
 				946FDA4D1F75F36200295866 /* Frameworks */,
+				BB15813781D42D437F932FA9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,14 +200,10 @@
 			children = (
 				94C128CB1F75F09F008EB91E /* AppDelegate.swift */,
 				94C128CF1F75F09F008EB91E /* Main.storyboard */,
-				946FDA141F75F23800295866 /* EnglishLanguageModel.swift */,
-				946FDA151F75F23800295866 /* IngredientCell.swift */,
-				946FDA101F75F23700295866 /* RecipeDetailVC.swift */,
-				946FDA161F75F23800295866 /* RecipeOverviewCell.swift */,
-				946FDA121F75F23700295866 /* RecipeOverviewVC.swift */,
-				946FDA0F1F75F23700295866 /* RecipeProcedureStepCell.swift */,
-				946FDA131F75F23800295866 /* RecipeProcedureVC.swift */,
-				946FDA111F75F23700295866 /* String+ValidCommands.swift */,
+				947DD1A71F87D5BF00CD53EE /* Views */,
+				947DD1A51F87D5A200CD53EE /* ViewModels */,
+				947DD1A61F87D5B000CD53EE /* Models */,
+				947DD1A81F87D5D200CD53EE /* Utilities */,
 				94C128D21F75F09F008EB91E /* Assets.xcassets */,
 				94C128D41F75F09F008EB91E /* LaunchScreen.storyboard */,
 				94C128D71F75F09F008EB91E /* Info.plist */,
@@ -175,6 +229,15 @@
 			path = sousChefUITests;
 			sourceTree = "<group>";
 		};
+		BB15813781D42D437F932FA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F2F240768BBCD282D63A08C /* Pods-sousChef.debug.xcconfig */,
+				CA2C2997F3B12591A26CB648 /* Pods-sousChef.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94C128F01F75F09F008EB91E /* Build configuration list for PBXNativeTarget "sousChef" */;
 			buildPhases = (
+				331FC817D85ACADC77C5D6B7 /* [CP] Check Pods Manifest.lock */,
 				94C128C41F75F09F008EB91E /* Sources */,
 				94C128C51F75F09F008EB91E /* Frameworks */,
 				94C128C61F75F09F008EB91E /* Resources */,
+				D99E53776191DD84F24BB61A /* [CP] Embed Pods Frameworks */,
+				034E6344FB3096E89D725F6A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947DD1A41F87D28E00CD53EE /* Podfile in Resources */,
 				94C128D61F75F09F008EB91E /* LaunchScreen.storyboard in Resources */,
 				946FDA571F75F5C400295866 /* AcousticModelEnglish.bundle in Resources */,
 				94C128D31F75F09F008EB91E /* Assets.xcassets in Resources */,
@@ -305,15 +372,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		034E6344FB3096E89D725F6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sousChef/Pods-sousChef-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		331FC817D85ACADC77C5D6B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sousChef-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99E53776191DD84F24BB61A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-sousChef/Pods-sousChef-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sousChef/Pods-sousChef-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94C128C41F75F09F008EB91E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				946FDA1B1F75F23900295866 /* RecipeProcedureVC.swift in Sources */,
+				94C1084A1F872BA800887B66 /* UICollectionViewCell+Extensions.swift in Sources */,
+				94C108481F872B0400887B66 /* RecipeProcedureHeaderSubCell.swift in Sources */,
+				94C1084C1F872D6400887B66 /* RecipeOverviewViewModel.swift in Sources */,
 				946FDA191F75F23900295866 /* String+ValidCommands.swift in Sources */,
 				946FDA1D1F75F23900295866 /* IngredientCell.swift in Sources */,
-				946FDA171F75F23900295866 /* RecipeProcedureStepCell.swift in Sources */,
+				947DD19C1F87CA3400CD53EE /* RecipeModel.swift in Sources */,
+				946FDA171F75F23900295866 /* RecipeProcedureHeaderSubMediaCell.swift in Sources */,
 				946FDA1C1F75F23900295866 /* EnglishLanguageModel.swift in Sources */,
 				94C128CC1F75F09F008EB91E /* AppDelegate.swift in Sources */,
 				946FDA181F75F23900295866 /* RecipeDetailVC.swift in Sources */,
@@ -482,6 +607,7 @@
 		};
 		94C128F11F75F09F008EB91E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F2F240768BBCD282D63A08C /* Pods-sousChef.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +630,7 @@
 		};
 		94C128F21F75F09F008EB91E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA2C2997F3B12591A26CB648 /* Pods-sousChef.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
