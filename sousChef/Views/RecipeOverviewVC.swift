@@ -24,7 +24,7 @@ class RecipeOverviewVC: UIViewController {
                            IngredientModel(title: "green onions, for garnish", measurement: "150g"),
                            IngredientModel(title: "sesame seeds, for garnish", measurement: "75g")]
         
-        let recipeDetailViewModel = RecipeDetailViewModelWithRecipe(RecipeModel(imageURL: "", title: "Char Siu Pork", duration: "9 hrs", ingredients: ingredients))
+        let recipeDetailViewModel = RecipeDetailViewModelWithRecipe(RecipeModel(imageURL: "", title: "Char Siu Pork", duration: "Total: 9 hrs. Active: 1 hr", ingredients: ingredients))
         viewModel = RecipeOverviewViewModelWithRecipes([recipeDetailViewModel])
         
         // bind using RxSwift
