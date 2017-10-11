@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeProcedureHeaderSubCell" id="MvN-hR-xpQ" customClass="RecipeProcedureHeaderSubCell" customModule="sousChef" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="181"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wts-UH-nBz">
+                        <rect key="frame" x="0.0" y="0.0" width="415" height="181"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.85000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="lmc-91-FWz">
+                                <rect key="frame" x="32" y="93" width="351" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directions Header" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQG-wN-jMk">
+                                <rect key="frame" x="32" y="32" width="351" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lmc-91-FWz" secondAttribute="trailing" constant="32" id="0kY-nV-wFU"/>
+                            <constraint firstAttribute="bottom" secondItem="lmc-91-FWz" secondAttribute="bottom" constant="64" id="Kun-hc-0Vh"/>
+                            <constraint firstItem="lmc-91-FWz" firstAttribute="leading" secondItem="wts-UH-nBz" secondAttribute="leading" constant="32" id="WX3-0I-wA1"/>
+                            <constraint firstItem="UQG-wN-jMk" firstAttribute="top" secondItem="wts-UH-nBz" secondAttribute="top" constant="32" id="X5a-BR-kJ2"/>
+                            <constraint firstItem="UQG-wN-jMk" firstAttribute="leading" secondItem="wts-UH-nBz" secondAttribute="leading" constant="32" id="YB9-iC-lJw"/>
+                            <constraint firstAttribute="trailing" secondItem="UQG-wN-jMk" secondAttribute="trailing" constant="32" id="ZsG-9r-R2F"/>
+                            <constraint firstItem="lmc-91-FWz" firstAttribute="top" secondItem="UQG-wN-jMk" secondAttribute="bottom" constant="32" id="cA9-LT-Jy0"/>
+                            <constraint firstAttribute="width" constant="415" id="wNQ-Ce-BLc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="wts-UH-nBz" firstAttribute="leading" secondItem="MvN-hR-xpQ" secondAttribute="leading" id="98D-uZ-j4k"/>
+                <constraint firstAttribute="trailing" secondItem="wts-UH-nBz" secondAttribute="trailing" id="Eb6-r5-n6Y"/>
+                <constraint firstAttribute="bottom" secondItem="wts-UH-nBz" secondAttribute="bottom" id="Goe-JD-Pje"/>
+                <constraint firstItem="wts-UH-nBz" firstAttribute="top" secondItem="MvN-hR-xpQ" secondAttribute="top" id="yl8-BN-259"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="mVf-Rb-RhT"/>
+            <size key="customSize" width="375" height="188"/>
+            <connections>
+                <outlet property="headerLabel" destination="UQG-wN-jMk" id="yEt-3V-Bdr"/>
+                <outlet property="subheaderLabel" destination="lmc-91-FWz" id="XPI-Cp-nn3"/>
+                <outlet property="widthConstraint" destination="wNQ-Ce-BLc" id="Gk7-5b-loX"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="54"/>
+        </collectionViewCell>
+    </objects>
+</document>

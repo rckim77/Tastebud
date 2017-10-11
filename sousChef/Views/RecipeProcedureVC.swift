@@ -11,7 +11,6 @@ import UIKit
 class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
 
     @IBOutlet var collectionView: UICollectionView!
-    @IBOutlet var collectionViewFlowLayout: UICollectionViewFlowLayout!
     @IBOutlet var micIcon: UIImageView!
     @IBOutlet var playPauseBtn: UIButton!
     
@@ -51,6 +50,14 @@ class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        collectionView.register(UINib.init(nibName: RecipeProcedureHeaderSubCell.identifier, bundle: nil), forCellWithReuseIdentifier: RecipeProcedureHeaderSubCell.identifier)
+        collectionView.register(UINib.init(nibName: RecipeProcedureHeaderSubMediaCell.identifier, bundle: nil), forCellWithReuseIdentifier: RecipeProcedureHeaderSubMediaCell.identifier)
+        // for dynamic cells
+        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.estimatedItemSize = CGSize(width: 1, height: 1)
+        }
+        collectionView.dataSource = self
         
         micIcon.image = #imageLiteral(resourceName: "SpeechOff")
         isPlaying = false

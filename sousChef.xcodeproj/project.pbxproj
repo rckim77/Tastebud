@@ -37,6 +37,8 @@
 		94C128D61F75F09F008EB91E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C128D41F75F09F008EB91E /* LaunchScreen.storyboard */; };
 		94C128E11F75F09F008EB91E /* sousChefTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C128E01F75F09F008EB91E /* sousChefTests.swift */; };
 		94C128EC1F75F09F008EB91E /* sousChefUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C128EB1F75F09F008EB91E /* sousChefUITests.swift */; };
+		94FCB04A1F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FCB0491F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib */; };
+		94FCB04C1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FCB04B1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		94C128E71F75F09F008EB91E /* sousChefUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sousChefUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C128EB1F75F09F008EB91E /* sousChefUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sousChefUITests.swift; sourceTree = "<group>"; };
 		94C128ED1F75F09F008EB91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FCB0491F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeProcedureHeaderSubMediaCell.xib; sourceTree = "<group>"; };
+		94FCB04B1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeProcedureHeaderSubCell.xib; sourceTree = "<group>"; };
 		CA2C2997F3B12591A26CB648 /* Pods-sousChef.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sousChef.release.xcconfig"; path = "Pods/Target Support Files/Pods-sousChef/Pods-sousChef.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,7 +175,9 @@
 				946FDA101F75F23700295866 /* RecipeDetailVC.swift */,
 				946FDA151F75F23800295866 /* IngredientCell.swift */,
 				946FDA0F1F75F23700295866 /* RecipeProcedureHeaderSubMediaCell.swift */,
+				94FCB0491F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib */,
 				94C108471F872B0400887B66 /* RecipeProcedureHeaderSubCell.swift */,
+				94FCB04B1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib */,
 				946FDA131F75F23800295866 /* RecipeProcedureVC.swift */,
 			);
 			path = Views;
@@ -363,11 +369,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FCB04A1F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib in Resources */,
 				947DD1A41F87D28E00CD53EE /* Podfile in Resources */,
 				94C128D61F75F09F008EB91E /* LaunchScreen.storyboard in Resources */,
 				946FDA571F75F5C400295866 /* AcousticModelEnglish.bundle in Resources */,
 				94C128D31F75F09F008EB91E /* Assets.xcassets in Resources */,
 				94C128D11F75F09F008EB91E /* Main.storyboard in Resources */,
+				94FCB04C1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
