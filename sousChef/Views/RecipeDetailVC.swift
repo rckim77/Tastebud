@@ -14,6 +14,7 @@ class RecipeDetailVC: UIViewController {
     @IBOutlet var recipeNameLabel: UILabel!
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var ingredientsTitleLabel: UILabel!
+    @IBOutlet var startButton: UIButton!
     
     @IBAction func startPressed(_ sender: UIButton) {
         
@@ -24,6 +25,13 @@ class RecipeDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        startButton.isUserInteractionEnabled = false
+        // TODO: Make network call to get procedure data for this recipe; disable start button until data is loaded successfully
+        UIView.animate(withDuration: 1.0, delay: 3.0, options: .curveEaseInOut, animations: {
+            self.startButton.backgroundColor = .green
+            self.startButton.isUserInteractionEnabled = true
+        }, completion: nil)
+        
 //        durationLabel.text = "Total: 9 hrs. Active: 1 hr"
         guard let recipe = viewModel else { return }
         
@@ -32,6 +40,13 @@ class RecipeDetailVC: UIViewController {
         ingredientsTitleLabel.text = "Ingredients"
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toRecipeProcedureVC" {
+            if let destinationVC = segue.destination as? RecipeProcedureVC {
+                destinationVC.viewModel = RecipeProcedureViewModelWithProcedure(ProcedureModel())
+            }
+        }
+    }
 }
 
 // Ingredients collection view

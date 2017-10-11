@@ -16,18 +16,20 @@ class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
     @IBOutlet var playPauseBtn: UIButton!
     
     @IBAction func closeBtnPressed(_ sender: UIButton) {
+        // TODO: close/stop any ongoing processes
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func doneBtnPress(_ sender: UIButton) {
+        // TODO: close/stop any ongoing processes
         // TODO: show modal to incentivize taking a picture/video of what you created, share, etc.
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func playBtnPress(_ sender: UIButton) {
-        playPauseToggle = !playPauseToggle
+        isPlaying = !isPlaying
         
-        if playPauseToggle { // now playing
+        if isPlaying { // now playing
             playPauseBtn.setImage(#imageLiteral(resourceName: "Play"), for: .normal)
             OEPocketsphinxController.sharedInstance().resumeRecognition()
 
@@ -38,15 +40,20 @@ class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
     }
     
     
-    var playPauseToggle: Bool = false // false = pause; true = play
+    var isPlaying: Bool = false
     var openEarsEventsObserver = OEEventsObserver()
-    var numberOfSteps: Int = 7
+    var numberOfSteps: Int?
+    var viewModel: RecipeProcedureViewModelWithProcedure? {
+        didSet {
+            numberOfSteps = viewModel?.procedure.steps.count
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         micIcon.image = #imageLiteral(resourceName: "SpeechOff")
-        playPauseToggle = false
+        isPlaying = false
         playPauseBtn.contentMode = .scaleAspectFit
         playPauseBtn.imageView?.image = #imageLiteral(resourceName: "Pause")
         
@@ -80,6 +87,8 @@ class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
     }
     
     func nextStepHandler() {
+        guard let numberOfSteps = numberOfSteps else { print("Error: numberOfSteps nil"); return }
+        
         let visibleIndexPathsSorted = collectionView.indexPathsForVisibleItems.sorted(by: { $0.row < $1.row })
         
         if visibleIndexPathsSorted.last!.row < numberOfSteps - 1 {
@@ -104,11 +113,12 @@ class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
     }
     
     func lastStepHandler() {
+        guard let numberOfSteps = numberOfSteps else { print("Error: numberOfSteps nil"); return }
         collectionView.scrollToItem(at: IndexPath(row: numberOfSteps - 1, section: 0), at: .top, animated: true)
     }
     
     func pauseHandler() {
-        playPauseToggle = false
+        isPlaying = false
         playPauseBtn.setImage(#imageLiteral(resourceName: "Play"), for: .normal)
         micIcon.image = #imageLiteral(resourceName: "SpeechOff")
         
@@ -116,7 +126,7 @@ class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
     }
     
     func playHandler() {
-        playPauseToggle = true
+        isPlaying = true
         playPauseBtn.setImage(#imageLiteral(resourceName: "Pause"), for: .normal)
         micIcon.image = #imageLiteral(resourceName: "SpeechOn")
         
@@ -203,47 +213,36 @@ extension RecipeProcedureVC: UICollectionViewDelegate, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return numberOfSteps
+        return viewModel?.procedure.steps.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeProcedureHeaderSubMediaCell.identifier, for: indexPath) as! RecipeProcedureHeaderSubMediaCell
+        let procedureHeaderSubMediaCell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeProcedureHeaderSubMediaCell.identifier, for: indexPath) as! RecipeProcedureHeaderSubMediaCell
+        let procedureHeaderSubCell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeProcedureHeaderSubCell.identifier, for: indexPath) as! RecipeProcedureHeaderSubCell
         
-        switch indexPath.row {
-        case 0:
-            cell.headerLabel.text = "1. Heat sous vide to 140F (or 60C) in a container of water."
-            cell.subheaderLabel.text = ""
-            cell.imageView.image = #imageLiteral(resourceName: "charsiuporksousvide")
-        case 1:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeProcedureHeaderSubCell.identifier, for: indexPath) as! RecipeProcedureHeaderSubCell
-            cell.headerLabel.text = "2. Slice pork into steaks"
-            cell.subheaderLabel.text = "Slice pork shoulder into steaks about 1.5\" (38mm) thick."
-        case 2:
-            cell.headerLabel.text = "3. Season pork"
-            cell.subheaderLabel.text = "Season pork with salt and let rest, allowing salt to dissolve into meat for 20 to 30 minutes."
-            cell.imageView.image = #imageLiteral(resourceName: "charsiuporksalt")
-        case 3:
-            cell.headerLabel.text = "4. Bag it up"
-            cell.subheaderLabel.text = "Fill sous vide bag with sauce, then add meat. You can cook meat right away or store in the fridge for up to 24 hours."
-            cell.imageView.image = #imageLiteral(resourceName: "charsiuporkbag")
-        case 4:
-            cell.headerLabel.text = "5. Cook for 8 hours"
-            cell.subheaderLabel.text = "Lower the bag into the cooking water and cook for 8 hours."
-            cell.imageView.image = #imageLiteral(resourceName: "charsiuporkbag2")
-        case 5:
-            cell.headerLabel.text = "6. Finish"
-            cell.subheaderLabel.text = "Sear steaks on each side until they reach a deep mahogany color. Remove right away."
-            cell.imageView.image = #imageLiteral(resourceName: "charsiuporkfinish")
-        case 6:
-            cell.headerLabel.text = "7. Serve"
-            cell.subheaderLabel.text = "Serve your pork right away–we like to offer it alongside little dipping bowls of mustard, green onions, and sesame seeds."
-            cell.imageView.image = #imageLiteral(resourceName: "charsiupork")
-        default:
-            cell.headerLabel.text = ""
-            cell.imageView.isHidden = true
+        guard let step = viewModel?.procedure.steps[indexPath.row] else { return UICollectionViewCell() }
+        
+        switch step.type {
+        case .header:
+            procedureHeaderSubCell.headerLabel.text = step.header
+            return procedureHeaderSubCell
+        case .headerPic:
+            procedureHeaderSubMediaCell.headerLabel.text = step.header
+            procedureHeaderSubMediaCell.imageView.image = step.image
+            return procedureHeaderSubMediaCell
+        case .headerSub:
+            procedureHeaderSubCell.headerLabel.text = step.header
+            procedureHeaderSubCell.subheaderLabel.text = step.subheader
+            return procedureHeaderSubCell
+        case .headerSubPic:
+            procedureHeaderSubMediaCell.headerLabel.text = step.header
+            procedureHeaderSubMediaCell.subheaderLabel.text = step.subheader
+            procedureHeaderSubMediaCell.imageView.image = step.image
+            return procedureHeaderSubMediaCell
+        case .headerSubVid:
+            // TODO: implement integrated video
+            return UICollectionViewCell()
         }
-        
-        return cell
     }
 
 }

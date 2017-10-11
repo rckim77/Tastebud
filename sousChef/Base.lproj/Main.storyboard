@@ -94,11 +94,11 @@
             <objects>
                 <viewController id="XIm-Ul-QpL" customClass="RecipeDetailVC" customModule="sousChef" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EIx-cz-RMG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZD-cB-7zS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="766"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="916"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3D-Qy-Zeo">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
@@ -169,14 +169,17 @@
                                             </collectionView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yty-wa-eQO">
                                                 <rect key="frame" x="0.0" y="744" width="375" height="56"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="KOx-uS-QPw"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                                <state key="normal" title="START"/>
+                                                <state key="normal" title="START">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="startPressed:" destination="XIm-Ul-QpL" eventType="touchUpInside" id="59E-ru-9vF"/>
-                                                    <segue destination="Na6-5L-lyL" kind="presentation" id="cqd-Lp-API"/>
+                                                    <segue destination="Na6-5L-lyL" kind="presentation" identifier="toRecipeProcedureVC" id="cqd-Lp-API"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -221,12 +224,13 @@
                         <viewLayoutGuide key="safeArea" id="kad-Oj-kfQ"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="oN8-vn-80K"/>
-                    <size key="freeformSize" width="375" height="800"/>
+                    <size key="freeformSize" width="375" height="950"/>
                     <connections>
                         <outlet property="durationLabel" destination="1SP-tk-7ug" id="sb4-gf-NAm"/>
                         <outlet property="ingredientsTitleLabel" destination="6KC-Q3-Pn4" id="KFe-9M-jHe"/>
                         <outlet property="mainImage" destination="BE2-rQ-JzH" id="Gvj-ZV-p1O"/>
                         <outlet property="recipeNameLabel" destination="gi9-y0-m64" id="0lE-Wb-DCV"/>
+                        <outlet property="startButton" destination="yty-wa-eQO" id="rEI-xe-h5E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Otq-L5-R3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
