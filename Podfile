@@ -1,5 +1,5 @@
 use_frameworks!
 
-target 'sousChef' do
+target 'Tastebud' do
     pod 'RxSwift'
 end

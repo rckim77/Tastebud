@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56451F2EE8EA3201ED92977F /* Pods_Tastebud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995C70AE3B820BE75B303658 /* Pods_Tastebud.framework */; };
+		946FDA171F75F23900295866 /* RecipeProcedureHeaderSubMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA0F1F75F23700295866 /* RecipeProcedureHeaderSubMediaCell.swift */; };
+		946FDA181F75F23900295866 /* RecipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA101F75F23700295866 /* RecipeDetailVC.swift */; };
+		946FDA191F75F23900295866 /* String+ValidCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA111F75F23700295866 /* String+ValidCommands.swift */; };
+		946FDA1A1F75F23900295866 /* RecipeOverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA121F75F23700295866 /* RecipeOverviewVC.swift */; };
+		946FDA1B1F75F23900295866 /* RecipeProcedureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA131F75F23800295866 /* RecipeProcedureVC.swift */; };
+		946FDA1C1F75F23900295866 /* EnglishLanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA141F75F23800295866 /* EnglishLanguageModel.swift */; };
+		946FDA1D1F75F23900295866 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA151F75F23800295866 /* IngredientCell.swift */; };
+		946FDA1E1F75F23900295866 /* RecipeOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA161F75F23800295866 /* RecipeOverviewCell.swift */; };
+		946FDA4F1F75F36300295866 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946FDA4E1F75F36300295866 /* AudioToolbox.framework */; };
+		946FDA511F75F36A00295866 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946FDA501F75F36A00295866 /* AVFoundation.framework */; };
+		946FDA571F75F5C400295866 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 946FDA201F75F28F00295866 /* AcousticModelEnglish.bundle */; };
+		946FDA591F75F86400295866 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946FDA581F75F86400295866 /* OpenEars.framework */; };
+		946FDA5B1F75F86C00295866 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946FDA5A1F75F86C00295866 /* Slt.framework */; };
+		947DD19C1F87CA3400CD53EE /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947DD19B1F87CA3400CD53EE /* RecipeModel.swift */; };
+		947DD1A41F87D28E00CD53EE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 947DD1A31F87D28E00CD53EE /* Podfile */; };
+		94913D3E1F87E3E500818B31 /* IngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94913D3D1F87E3E500818B31 /* IngredientModel.swift */; };
+		94913D401F87E50800818B31 /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94913D3F1F87E50800818B31 /* RecipeDetailViewModel.swift */; };
+		94913D421F8AC43E00818B31 /* RecipeProcedureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94913D411F8AC43E00818B31 /* RecipeProcedureViewModel.swift */; };
+		94913D441F8AC4EE00818B31 /* ProcedureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94913D431F8AC4EE00818B31 /* ProcedureModel.swift */; };
+		94913D461F8AC4FD00818B31 /* ProcedureStepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94913D451F8AC4FD00818B31 /* ProcedureStepModel.swift */; };
+		94C108481F872B0400887B66 /* RecipeProcedureHeaderSubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C108471F872B0400887B66 /* RecipeProcedureHeaderSubCell.swift */; };
+		94C1084A1F872BA800887B66 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C108491F872BA800887B66 /* UICollectionViewCell+Extensions.swift */; };
+		94C1084C1F872D6400887B66 /* RecipeOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C1084B1F872D6400887B66 /* RecipeOverviewViewModel.swift */; };
+		94C128CC1F75F09F008EB91E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C128CB1F75F09F008EB91E /* AppDelegate.swift */; };
+		94C128D11F75F09F008EB91E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C128CF1F75F09F008EB91E /* Main.storyboard */; };
+		94C128D31F75F09F008EB91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C128D21F75F09F008EB91E /* Assets.xcassets */; };
+		94C128D61F75F09F008EB91E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C128D41F75F09F008EB91E /* LaunchScreen.storyboard */; };
+		94C128E11F75F09F008EB91E /* TastebudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C128E01F75F09F008EB91E /* TastebudTests.swift */; };
+		94C128EC1F75F09F008EB91E /* TastebudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C128EB1F75F09F008EB91E /* TastebudUITests.swift */; };
+		94FCB04A1F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FCB0491F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib */; };
+		94FCB04C1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FCB04B1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94C128DD1F75F09F008EB91E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94C128C01F75F09F008EB91E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94C128C71F75F09F008EB91E;
+			remoteInfo = sousChef;
+		};
+		94C128E81F75F09F008EB91E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94C128C01F75F09F008EB91E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94C128C71F75F09F008EB91E;
+			remoteInfo = sousChef;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77D7DA54DB4C0564144F7F05 /* Pods-Tastebud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tastebud.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tastebud/Pods-Tastebud.release.xcconfig"; sourceTree = "<group>"; };
+		946FDA0F1F75F23700295866 /* RecipeProcedureHeaderSubMediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProcedureHeaderSubMediaCell.swift; sourceTree = "<group>"; };
+		946FDA101F75F23700295866 /* RecipeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailVC.swift; sourceTree = "<group>"; };
+		946FDA111F75F23700295866 /* String+ValidCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ValidCommands.swift"; sourceTree = "<group>"; };
+		946FDA121F75F23700295866 /* RecipeOverviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOverviewVC.swift; sourceTree = "<group>"; };
+		946FDA131F75F23800295866 /* RecipeProcedureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProcedureVC.swift; sourceTree = "<group>"; };
+		946FDA141F75F23800295866 /* EnglishLanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishLanguageModel.swift; sourceTree = "<group>"; };
+		946FDA151F75F23800295866 /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
+		946FDA161F75F23800295866 /* RecipeOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOverviewCell.swift; sourceTree = "<group>"; };
+		946FDA201F75F28F00295866 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		946FDA4E1F75F36300295866 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		946FDA501F75F36A00295866 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		946FDA561F75F51800295866 /* OpenEarsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenEarsHeader.h; sourceTree = "<group>"; };
+		946FDA581F75F86400295866 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		946FDA5A1F75F86C00295866 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		947DD19B1F87CA3400CD53EE /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		947DD1A31F87D28E00CD53EE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94913D3D1F87E3E500818B31 /* IngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModel.swift; sourceTree = "<group>"; };
+		94913D3F1F87E50800818B31 /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
+		94913D411F8AC43E00818B31 /* RecipeProcedureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProcedureViewModel.swift; sourceTree = "<group>"; };
+		94913D431F8AC4EE00818B31 /* ProcedureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureModel.swift; sourceTree = "<group>"; };
+		94913D451F8AC4FD00818B31 /* ProcedureStepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcedureStepModel.swift; sourceTree = "<group>"; };
+		94C108471F872B0400887B66 /* RecipeProcedureHeaderSubCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProcedureHeaderSubCell.swift; sourceTree = "<group>"; };
+		94C108491F872BA800887B66 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		94C1084B1F872D6400887B66 /* RecipeOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeOverviewViewModel.swift; sourceTree = "<group>"; };
+		94C128C81F75F09F008EB91E /* Tastebud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tastebud.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C128CB1F75F09F008EB91E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94C128D01F75F09F008EB91E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94C128D21F75F09F008EB91E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94C128D51F75F09F008EB91E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94C128D71F75F09F008EB91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94C128DC1F75F09F008EB91E /* TastebudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TastebudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C128E01F75F09F008EB91E /* TastebudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastebudTests.swift; sourceTree = "<group>"; };
+		94C128E21F75F09F008EB91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94C128E71F75F09F008EB91E /* TastebudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TastebudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C128EB1F75F09F008EB91E /* TastebudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastebudUITests.swift; sourceTree = "<group>"; };
+		94C128ED1F75F09F008EB91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FCB0491F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeProcedureHeaderSubMediaCell.xib; sourceTree = "<group>"; };
+		94FCB04B1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeProcedureHeaderSubCell.xib; sourceTree = "<group>"; };
+		995C70AE3B820BE75B303658 /* Pods_Tastebud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tastebud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD33B9EDF155AD753EDF61E /* Pods-Tastebud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tastebud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tastebud/Pods-Tastebud.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94C128C51F75F09F008EB91E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946FDA5B1F75F86C00295866 /* Slt.framework in Frameworks */,
+				946FDA591F75F86400295866 /* OpenEars.framework in Frameworks */,
+				946FDA511F75F36A00295866 /* AVFoundation.framework in Frameworks */,
+				946FDA4F1F75F36300295866 /* AudioToolbox.framework in Frameworks */,
+				56451F2EE8EA3201ED92977F /* Pods_Tastebud.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C128D91F75F09F008EB91E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C128E41F75F09F008EB91E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		946FDA4D1F75F36200295866 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				946FDA5A1F75F86C00295866 /* Slt.framework */,
+				946FDA581F75F86400295866 /* OpenEars.framework */,
+				946FDA201F75F28F00295866 /* AcousticModelEnglish.bundle */,
+				946FDA501F75F36A00295866 /* AVFoundation.framework */,
+				946FDA4E1F75F36300295866 /* AudioToolbox.framework */,
+				995C70AE3B820BE75B303658 /* Pods_Tastebud.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		947DD1A51F87D5A200CD53EE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				94C1084B1F872D6400887B66 /* RecipeOverviewViewModel.swift */,
+				94913D3F1F87E50800818B31 /* RecipeDetailViewModel.swift */,
+				94913D411F8AC43E00818B31 /* RecipeProcedureViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		947DD1A61F87D5B000CD53EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				946FDA141F75F23800295866 /* EnglishLanguageModel.swift */,
+				947DD19B1F87CA3400CD53EE /* RecipeModel.swift */,
+				94913D3D1F87E3E500818B31 /* IngredientModel.swift */,
+				94913D431F8AC4EE00818B31 /* ProcedureModel.swift */,
+				94913D451F8AC4FD00818B31 /* ProcedureStepModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		947DD1A71F87D5BF00CD53EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				946FDA121F75F23700295866 /* RecipeOverviewVC.swift */,
+				946FDA161F75F23800295866 /* RecipeOverviewCell.swift */,
+				946FDA101F75F23700295866 /* RecipeDetailVC.swift */,
+				946FDA151F75F23800295866 /* IngredientCell.swift */,
+				946FDA0F1F75F23700295866 /* RecipeProcedureHeaderSubMediaCell.swift */,
+				94FCB0491F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib */,
+				94C108471F872B0400887B66 /* RecipeProcedureHeaderSubCell.swift */,
+				94FCB04B1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib */,
+				946FDA131F75F23800295866 /* RecipeProcedureVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		947DD1A81F87D5D200CD53EE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				946FDA111F75F23700295866 /* String+ValidCommands.swift */,
+				94C108491F872BA800887B66 /* UICollectionViewCell+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		94C128BF1F75F09F008EB91E = {
+			isa = PBXGroup;
+			children = (
+				947DD1A31F87D28E00CD53EE /* Podfile */,
+				946FDA561F75F51800295866 /* OpenEarsHeader.h */,
+				94C128CA1F75F09F008EB91E /* Tastebud */,
+				94C128DF1F75F09F008EB91E /* TastebudTests */,
+				94C128EA1F75F09F008EB91E /* TastebudUITests */,
+				94C128C91F75F09F008EB91E /* Products */,
+				946FDA4D1F75F36200295866 /* Frameworks */,
+				BB15813781D42D437F932FA9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		94C128C91F75F09F008EB91E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94C128C81F75F09F008EB91E /* Tastebud.app */,
+				94C128DC1F75F09F008EB91E /* TastebudTests.xctest */,
+				94C128E71F75F09F008EB91E /* TastebudUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94C128CA1F75F09F008EB91E /* Tastebud */ = {
+			isa = PBXGroup;
+			children = (
+				94C128CB1F75F09F008EB91E /* AppDelegate.swift */,
+				94C128CF1F75F09F008EB91E /* Main.storyboard */,
+				947DD1A71F87D5BF00CD53EE /* Views */,
+				947DD1A51F87D5A200CD53EE /* ViewModels */,
+				947DD1A61F87D5B000CD53EE /* Models */,
+				947DD1A81F87D5D200CD53EE /* Utilities */,
+				94C128D21F75F09F008EB91E /* Assets.xcassets */,
+				94C128D41F75F09F008EB91E /* LaunchScreen.storyboard */,
+				94C128D71F75F09F008EB91E /* Info.plist */,
+			);
+			path = Tastebud;
+			sourceTree = "<group>";
+		};
+		94C128DF1F75F09F008EB91E /* TastebudTests */ = {
+			isa = PBXGroup;
+			children = (
+				94C128E01F75F09F008EB91E /* TastebudTests.swift */,
+				94C128E21F75F09F008EB91E /* Info.plist */,
+			);
+			path = TastebudTests;
+			sourceTree = "<group>";
+		};
+		94C128EA1F75F09F008EB91E /* TastebudUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94C128EB1F75F09F008EB91E /* TastebudUITests.swift */,
+				94C128ED1F75F09F008EB91E /* Info.plist */,
+			);
+			path = TastebudUITests;
+			sourceTree = "<group>";
+		};
+		BB15813781D42D437F932FA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFD33B9EDF155AD753EDF61E /* Pods-Tastebud.debug.xcconfig */,
+				77D7DA54DB4C0564144F7F05 /* Pods-Tastebud.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94C128C71F75F09F008EB91E /* Tastebud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94C128F01F75F09F008EB91E /* Build configuration list for PBXNativeTarget "Tastebud" */;
+			buildPhases = (
+				331FC817D85ACADC77C5D6B7 /* [CP] Check Pods Manifest.lock */,
+				94C128C41F75F09F008EB91E /* Sources */,
+				94C128C51F75F09F008EB91E /* Frameworks */,
+				94C128C61F75F09F008EB91E /* Resources */,
+				D99E53776191DD84F24BB61A /* [CP] Embed Pods Frameworks */,
+				034E6344FB3096E89D725F6A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tastebud;
+			productName = sousChef;
+			productReference = 94C128C81F75F09F008EB91E /* Tastebud.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94C128DB1F75F09F008EB91E /* TastebudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94C128F31F75F09F008EB91E /* Build configuration list for PBXNativeTarget "TastebudTests" */;
+			buildPhases = (
+				94C128D81F75F09F008EB91E /* Sources */,
+				94C128D91F75F09F008EB91E /* Frameworks */,
+				94C128DA1F75F09F008EB91E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94C128DE1F75F09F008EB91E /* PBXTargetDependency */,
+			);
+			name = TastebudTests;
+			productName = sousChefTests;
+			productReference = 94C128DC1F75F09F008EB91E /* TastebudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94C128E61F75F09F008EB91E /* TastebudUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94C128F61F75F09F008EB91E /* Build configuration list for PBXNativeTarget "TastebudUITests" */;
+			buildPhases = (
+				94C128E31F75F09F008EB91E /* Sources */,
+				94C128E41F75F09F008EB91E /* Frameworks */,
+				94C128E51F75F09F008EB91E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94C128E91F75F09F008EB91E /* PBXTargetDependency */,
+			);
+			name = TastebudUITests;
+			productName = sousChefUITests;
+			productReference = 94C128E71F75F09F008EB91E /* TastebudUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94C128C01F75F09F008EB91E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Raymond Kim";
+				TargetAttributes = {
+					94C128C71F75F09F008EB91E = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					94C128DB1F75F09F008EB91E = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 94C128C71F75F09F008EB91E;
+					};
+					94C128E61F75F09F008EB91E = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 94C128C71F75F09F008EB91E;
+					};
+				};
+			};
+			buildConfigurationList = 94C128C31F75F09F008EB91E /* Build configuration list for PBXProject "Tastebud" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94C128BF1F75F09F008EB91E;
+			productRefGroup = 94C128C91F75F09F008EB91E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94C128C71F75F09F008EB91E /* Tastebud */,
+				94C128DB1F75F09F008EB91E /* TastebudTests */,
+				94C128E61F75F09F008EB91E /* TastebudUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94C128C61F75F09F008EB91E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94FCB04A1F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib in Resources */,
+				947DD1A41F87D28E00CD53EE /* Podfile in Resources */,
+				94C128D61F75F09F008EB91E /* LaunchScreen.storyboard in Resources */,
+				946FDA571F75F5C400295866 /* AcousticModelEnglish.bundle in Resources */,
+				94C128D31F75F09F008EB91E /* Assets.xcassets in Resources */,
+				94C128D11F75F09F008EB91E /* Main.storyboard in Resources */,
+				94FCB04C1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C128DA1F75F09F008EB91E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C128E51F75F09F008EB91E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		034E6344FB3096E89D725F6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tastebud/Pods-Tastebud-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		331FC817D85ACADC77C5D6B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tastebud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99E53776191DD84F24BB61A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tastebud/Pods-Tastebud-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tastebud/Pods-Tastebud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94C128C41F75F09F008EB91E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94913D3E1F87E3E500818B31 /* IngredientModel.swift in Sources */,
+				946FDA1B1F75F23900295866 /* RecipeProcedureVC.swift in Sources */,
+				94C1084A1F872BA800887B66 /* UICollectionViewCell+Extensions.swift in Sources */,
+				94C108481F872B0400887B66 /* RecipeProcedureHeaderSubCell.swift in Sources */,
+				94C1084C1F872D6400887B66 /* RecipeOverviewViewModel.swift in Sources */,
+				946FDA191F75F23900295866 /* String+ValidCommands.swift in Sources */,
+				94913D421F8AC43E00818B31 /* RecipeProcedureViewModel.swift in Sources */,
+				946FDA1D1F75F23900295866 /* IngredientCell.swift in Sources */,
+				947DD19C1F87CA3400CD53EE /* RecipeModel.swift in Sources */,
+				94913D401F87E50800818B31 /* RecipeDetailViewModel.swift in Sources */,
+				946FDA171F75F23900295866 /* RecipeProcedureHeaderSubMediaCell.swift in Sources */,
+				94913D441F8AC4EE00818B31 /* ProcedureModel.swift in Sources */,
+				946FDA1C1F75F23900295866 /* EnglishLanguageModel.swift in Sources */,
+				94C128CC1F75F09F008EB91E /* AppDelegate.swift in Sources */,
+				946FDA181F75F23900295866 /* RecipeDetailVC.swift in Sources */,
+				94913D461F8AC4FD00818B31 /* ProcedureStepModel.swift in Sources */,
+				946FDA1E1F75F23900295866 /* RecipeOverviewCell.swift in Sources */,
+				946FDA1A1F75F23900295866 /* RecipeOverviewVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C128D81F75F09F008EB91E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C128E11F75F09F008EB91E /* TastebudTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C128E31F75F09F008EB91E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C128EC1F75F09F008EB91E /* TastebudUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94C128DE1F75F09F008EB91E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94C128C71F75F09F008EB91E /* Tastebud */;
+			targetProxy = 94C128DD1F75F09F008EB91E /* PBXContainerItemProxy */;
+		};
+		94C128E91F75F09F008EB91E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94C128C71F75F09F008EB91E /* Tastebud */;
+			targetProxy = 94C128E81F75F09F008EB91E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94C128CF1F75F09F008EB91E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94C128D01F75F09F008EB91E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94C128D41F75F09F008EB91E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94C128D51F75F09F008EB91E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94C128EE1F75F09F008EB91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94C128EF1F75F09F008EB91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94C128F11F75F09F008EB91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFD33B9EDF155AD753EDF61E /* Pods-Tastebud.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 58D954W93X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Tastebud/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.sousChef;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/RaymondKim/Desktop/CS_Projects/sousChef/Tastebud/OpenEarsHeader.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94C128F21F75F09F008EB91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D7DA54DB4C0564144F7F05 /* Pods-Tastebud.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 58D954W93X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Tastebud/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.sousChef;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/RaymondKim/Desktop/CS_Projects/sousChef/Tastebud/OpenEarsHeader.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94C128F41F75F09F008EB91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58D954W93X;
+				INFOPLIST_FILE = sousChefTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.sousChefTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tastebud.app/Tastebud";
+			};
+			name = Debug;
+		};
+		94C128F51F75F09F008EB91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58D954W93X;
+				INFOPLIST_FILE = sousChefTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.sousChefTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tastebud.app/Tastebud";
+			};
+			name = Release;
+		};
+		94C128F71F75F09F008EB91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58D954W93X;
+				INFOPLIST_FILE = sousChefUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.sousChefUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sousChef;
+			};
+			name = Debug;
+		};
+		94C128F81F75F09F008EB91E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58D954W93X;
+				INFOPLIST_FILE = sousChefUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.sousChefUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sousChef;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94C128C31F75F09F008EB91E /* Build configuration list for PBXProject "Tastebud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94C128EE1F75F09F008EB91E /* Debug */,
+				94C128EF1F75F09F008EB91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94C128F01F75F09F008EB91E /* Build configuration list for PBXNativeTarget "Tastebud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94C128F11F75F09F008EB91E /* Debug */,
+				94C128F21F75F09F008EB91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94C128F31F75F09F008EB91E /* Build configuration list for PBXNativeTarget "TastebudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94C128F41F75F09F008EB91E /* Debug */,
+				94C128F51F75F09F008EB91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94C128F61F75F09F008EB91E /* Build configuration list for PBXNativeTarget "TastebudUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94C128F71F75F09F008EB91E /* Debug */,
+				94C128F81F75F09F008EB91E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94C128C01F75F09F008EB91E /* Project object */;
+}

@@ -1,6 +1,0 @@
-framework module Pods_sousChef {
-  umbrella header "Pods-sousChef-umbrella.h"
-
-  export *
-  module * { export * }
-}

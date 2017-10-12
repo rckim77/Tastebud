@@ -1,6 +1,6 @@
 //
 //  OpenEarsHeader.h
-//  sousChef
+//  Tastebud
 //
 //  Created by Raymond Kim on 9/22/17.
 //  Copyright © 2017 Raymond Kim. All rights reserved.
