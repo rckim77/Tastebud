@@ -21,12 +21,7 @@ class TastebudTests: XCTestCase {
         super.tearDown()
     }
     
-    func testRecipeOverviewViewModelWithCharSiuRecipes() {
-        let charSiuRecipeModel = RecipeModel(imageURL: "", title: "Char Siu Pork")
-        let charSiuRecipeViewModel = RecipeOverviewViewModelWithRecipes([charSiuRecipeModel])
-        
-        XCTAssertEqual(charSiuRecipeViewModel.recipes[0].imageURL, "")
-        XCTAssertEqual(charSiuRecipeViewModel.recipes[0].title, "Char Siu Pork")
+    func testRecipeModel() {
         
     }
     
