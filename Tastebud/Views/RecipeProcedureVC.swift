@@ -16,12 +16,14 @@ class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
     
     @IBAction func closeBtnPressed(_ sender: UIButton) {
         // TODO: close/stop any ongoing processes
+        OEPocketsphinxController.sharedInstance().suspendRecognition()
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func doneBtnPress(_ sender: UIButton) {
         // TODO: close/stop any ongoing processes
         // TODO: show modal to incentivize taking a picture/video of what you created, share, etc.
+        OEPocketsphinxController.sharedInstance().suspendRecognition()
         dismiss(animated: true, completion: nil)
     }
     

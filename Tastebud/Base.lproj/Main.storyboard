@@ -94,11 +94,11 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="XIm-Ul-QpL" customClass="RecipeDetailVC" customModule="Tastebud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EIx-cz-RMG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="950"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZD-cB-7zS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="916"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3D-Qy-Zeo">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
@@ -128,7 +128,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZnP-VO-WOf">
-                                                <rect key="frame" x="48" y="418.66666666666674" width="279" height="301.33333333333326"/>
+                                                <rect key="frame" x="36" y="418.66666666666674" width="303" height="301.33333333333326"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="2ex-Kc-pqQ">
                                                     <size key="itemSize" width="279" height="32"/>
@@ -138,7 +138,7 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ingredientCell" id="W8B-0Q-fk9" customClass="IngredientCell" customModule="Tastebud" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="279" height="32"/>
+                                                        <rect key="frame" x="12" y="0.0" width="279" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                             <rect key="frame" x="0.0" y="0.0" width="279" height="32"/>
@@ -196,9 +196,9 @@
                                             <constraint firstAttribute="trailing" secondItem="yty-wa-eQO" secondAttribute="trailing" id="bDf-D4-Whb"/>
                                             <constraint firstItem="yty-wa-eQO" firstAttribute="leading" secondItem="I3D-Qy-Zeo" secondAttribute="leading" id="c7b-ac-B2T"/>
                                             <constraint firstItem="6KC-Q3-Pn4" firstAttribute="centerX" secondItem="I3D-Qy-Zeo" secondAttribute="centerX" id="dWV-Zb-qms"/>
-                                            <constraint firstAttribute="trailing" secondItem="ZnP-VO-WOf" secondAttribute="trailing" constant="48" id="dak-Rl-tnu"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZnP-VO-WOf" secondAttribute="trailing" constant="36" id="dak-Rl-tnu"/>
                                             <constraint firstItem="gi9-y0-m64" firstAttribute="centerX" secondItem="I3D-Qy-Zeo" secondAttribute="centerX" id="eKT-Bg-7Ds"/>
-                                            <constraint firstItem="ZnP-VO-WOf" firstAttribute="leading" secondItem="I3D-Qy-Zeo" secondAttribute="leading" constant="48" id="hy0-rg-PQa"/>
+                                            <constraint firstItem="ZnP-VO-WOf" firstAttribute="leading" secondItem="I3D-Qy-Zeo" secondAttribute="leading" constant="36" id="hy0-rg-PQa"/>
                                             <constraint firstItem="ZnP-VO-WOf" firstAttribute="top" secondItem="6KC-Q3-Pn4" secondAttribute="bottom" constant="24" id="jtB-sJ-e9E"/>
                                             <constraint firstItem="BE2-rQ-JzH" firstAttribute="top" secondItem="I3D-Qy-Zeo" secondAttribute="top" id="qH6-DJ-NSw"/>
                                             <constraint firstItem="1SP-tk-7ug" firstAttribute="top" secondItem="gi9-y0-m64" secondAttribute="bottom" constant="24" id="rbA-1K-QvV"/>
@@ -224,7 +224,6 @@
                         <viewLayoutGuide key="safeArea" id="kad-Oj-kfQ"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="oN8-vn-80K"/>
-                    <size key="freeformSize" width="375" height="950"/>
                     <connections>
                         <outlet property="durationLabel" destination="1SP-tk-7ug" id="sb4-gf-NAm"/>
                         <outlet property="ingredientsTitleLabel" destination="6KC-Q3-Pn4" id="KFe-9M-jHe"/>
