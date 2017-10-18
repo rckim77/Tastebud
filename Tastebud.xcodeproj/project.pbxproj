@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		56451F2EE8EA3201ED92977F /* Pods_Tastebud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995C70AE3B820BE75B303658 /* Pods_Tastebud.framework */; };
+		9461BA471F96E7850013FACF /* TastebudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461BA461F96E7850013FACF /* TastebudUITests.swift */; };
+		9461BA4A1F96E7C60013FACF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9461BA491F96E7C60013FACF /* Info.plist */; };
 		946FDA171F75F23900295866 /* RecipeProcedureHeaderSubMediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA0F1F75F23700295866 /* RecipeProcedureHeaderSubMediaCell.swift */; };
 		946FDA181F75F23900295866 /* RecipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA101F75F23700295866 /* RecipeDetailVC.swift */; };
 		946FDA191F75F23900295866 /* String+ValidCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FDA111F75F23700295866 /* String+ValidCommands.swift */; };
@@ -36,7 +38,6 @@
 		94C128D31F75F09F008EB91E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C128D21F75F09F008EB91E /* Assets.xcassets */; };
 		94C128D61F75F09F008EB91E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94C128D41F75F09F008EB91E /* LaunchScreen.storyboard */; };
 		94C128E11F75F09F008EB91E /* TastebudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C128E01F75F09F008EB91E /* TastebudTests.swift */; };
-		94C128EC1F75F09F008EB91E /* TastebudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C128EB1F75F09F008EB91E /* TastebudUITests.swift */; };
 		94FCB04A1F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FCB0491F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib */; };
 		94FCB04C1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FCB04B1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		77D7DA54DB4C0564144F7F05 /* Pods-Tastebud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tastebud.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tastebud/Pods-Tastebud.release.xcconfig"; sourceTree = "<group>"; };
+		9461BA461F96E7850013FACF /* TastebudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastebudUITests.swift; sourceTree = "<group>"; };
+		9461BA491F96E7C60013FACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		946FDA0F1F75F23700295866 /* RecipeProcedureHeaderSubMediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeProcedureHeaderSubMediaCell.swift; sourceTree = "<group>"; };
 		946FDA101F75F23700295866 /* RecipeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailVC.swift; sourceTree = "<group>"; };
 		946FDA111F75F23700295866 /* String+ValidCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ValidCommands.swift"; sourceTree = "<group>"; };
@@ -94,8 +97,6 @@
 		94C128E01F75F09F008EB91E /* TastebudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastebudTests.swift; sourceTree = "<group>"; };
 		94C128E21F75F09F008EB91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C128E71F75F09F008EB91E /* TastebudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TastebudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		94C128EB1F75F09F008EB91E /* TastebudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastebudUITests.swift; sourceTree = "<group>"; };
-		94C128ED1F75F09F008EB91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94FCB0491F8DD739006D4A83 /* RecipeProcedureHeaderSubMediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeProcedureHeaderSubMediaCell.xib; sourceTree = "<group>"; };
 		94FCB04B1F8DD7C4006D4A83 /* RecipeProcedureHeaderSubCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeProcedureHeaderSubCell.xib; sourceTree = "<group>"; };
 		995C70AE3B820BE75B303658 /* Pods_Tastebud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tastebud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9461BA481F96E7A30013FACF /* TastebudUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9461BA461F96E7850013FACF /* TastebudUITests.swift */,
+				9461BA491F96E7C60013FACF /* Info.plist */,
+			);
+			path = TastebudUITests;
+			sourceTree = "<group>";
+		};
 		946FDA4D1F75F36200295866 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +209,7 @@
 				946FDA561F75F51800295866 /* OpenEarsHeader.h */,
 				94C128CA1F75F09F008EB91E /* Tastebud */,
 				94C128DF1F75F09F008EB91E /* TastebudTests */,
-				94C128EA1F75F09F008EB91E /* TastebudUITests */,
+				9461BA481F96E7A30013FACF /* TastebudUITests */,
 				94C128C91F75F09F008EB91E /* Products */,
 				946FDA4D1F75F36200295866 /* Frameworks */,
 				BB15813781D42D437F932FA9 /* Pods */,
@@ -239,15 +249,6 @@
 				94C128E21F75F09F008EB91E /* Info.plist */,
 			);
 			path = TastebudTests;
-			sourceTree = "<group>";
-		};
-		94C128EA1F75F09F008EB91E /* TastebudUITests */ = {
-			isa = PBXGroup;
-			children = (
-				94C128EB1F75F09F008EB91E /* TastebudUITests.swift */,
-				94C128ED1F75F09F008EB91E /* Info.plist */,
-			);
-			path = TastebudUITests;
 			sourceTree = "<group>";
 		};
 		BB15813781D42D437F932FA9 /* Pods */ = {
@@ -339,6 +340,7 @@
 					};
 					94C128E61F75F09F008EB91E = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 94C128C71F75F09F008EB91E;
 					};
@@ -390,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9461BA4A1F96E7C60013FACF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94C128EC1F75F09F008EB91E /* TastebudUITests.swift in Sources */,
+				9461BA471F96E7850013FACF /* TastebudUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,15 +720,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58D954W93X;
 				INFOPLIST_FILE = TastebudUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.TastebudUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = sousChef;
+				TEST_TARGET_NAME = Tastebud;
 			};
 			name = Debug;
 		};
@@ -733,15 +739,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58D954W93X;
 				INFOPLIST_FILE = TastebudUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.TastebudUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = sousChef;
+				TEST_TARGET_NAME = Tastebud;
 			};
 			name = Release;
 		};
