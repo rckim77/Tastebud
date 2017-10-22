@@ -13,6 +13,7 @@ class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var micIcon: UIImageView!
     @IBOutlet var playPauseBtn: UIButton!
+    @IBOutlet var menuView: UIView!
     
     @IBAction func closeBtnPressed(_ sender: UIButton) {
         // TODO: close/stop any ongoing processes
@@ -40,7 +41,6 @@ class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
         }
     }
     
-    
     var isPlaying: Bool = false
     var openEarsEventsObserver = OEEventsObserver()
     var numberOfSteps: Int?
@@ -53,9 +53,12 @@ class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setGradientForMenuView()
+        
         collectionView.register(UINib.init(nibName: RecipeProcedureHeaderSubCell.identifier, bundle: nil), forCellWithReuseIdentifier: RecipeProcedureHeaderSubCell.identifier)
         collectionView.register(UINib.init(nibName: RecipeProcedureHeaderSubMediaCell.identifier, bundle: nil), forCellWithReuseIdentifier: RecipeProcedureHeaderSubMediaCell.identifier)
-        // for dynamic cells
+        
+        // for dynamically-sized cells
         if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.estimatedItemSize = CGSize(width: 1, height: 1)
         }
@@ -79,7 +82,7 @@ class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
             let lmPath = lmGenerator.pathToSuccessfullyGeneratedLanguageModel(withRequestedName: name)
             let dicPath = lmGenerator.pathToSuccessfullyGeneratedDictionary(withRequestedName: name)
             
-            // OELogging.startOpenEarsLogging() // uncomment to receive full OpenEars logging inc ase of any unexpected results.
+            // OELogging.startOpenEarsLogging() // uncomment to receive full OpenEars logging in case of any unexpected results.
             do {
                 try OEPocketsphinxController.sharedInstance().setActive(true) // Setting the shared OEPocketsphinxController active is necessary before any of its properties are accessed.
             } catch {
@@ -91,6 +94,13 @@ class RecipeProcedureVC: UIViewController, OEEventsObserverDelegate {
     }
     
     // MARK: selectors and helper methods
+    func setGradientForMenuView() {
+        let gradient = CAGradientLayer()
+        gradient.frame = menuView.bounds
+        gradient.colors = [UIColor.white.cgColor, UIColor.white.withAlphaComponent(0).cgColor]
+        menuView.layer.insertSublayer(gradient, at: 0)
+    }
+    
     func completedBtnPress(sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
@@ -226,31 +236,44 @@ extension RecipeProcedureVC: UICollectionViewDelegate, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let procedureHeaderSubMediaCell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeProcedureHeaderSubMediaCell.identifier, for: indexPath) as! RecipeProcedureHeaderSubMediaCell
-        let procedureHeaderSubCell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeProcedureHeaderSubCell.identifier, for: indexPath) as! RecipeProcedureHeaderSubCell
         
         guard let step = viewModel?.procedure.steps[indexPath.row] else { return UICollectionViewCell() }
         
         switch step.type {
-        case .header:
+        case .header, .headerSub:
+            let procedureHeaderSubCell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeProcedureHeaderSubCell.identifier, for: indexPath) as! RecipeProcedureHeaderSubCell
+            
             procedureHeaderSubCell.headerLabel.text = step.header
+            
+            if step.type == .headerSub {
+                procedureHeaderSubCell.subheaderLabel.text = step.subheader
+            }
+            
             return procedureHeaderSubCell
-        case .headerPic:
+        case .headerPic, .headerSubPic:
+            let procedureHeaderSubMediaCell = collectionView.dequeueReusableCell(withReuseIdentifier: RecipeProcedureHeaderSubMediaCell.identifier, for: indexPath) as! RecipeProcedureHeaderSubMediaCell
+            
             procedureHeaderSubMediaCell.headerLabel.text = step.header
             procedureHeaderSubMediaCell.imageView.image = step.image
-            return procedureHeaderSubMediaCell
-        case .headerSub:
-            procedureHeaderSubCell.headerLabel.text = step.header
-            procedureHeaderSubCell.subheaderLabel.text = step.subheader
-            return procedureHeaderSubCell
-        case .headerSubPic:
-            procedureHeaderSubMediaCell.headerLabel.text = step.header
-            procedureHeaderSubMediaCell.subheaderLabel.text = step.subheader
-            procedureHeaderSubMediaCell.imageView.image = step.image
+            
+            if step.type == .headerSubPic { 
+                procedureHeaderSubMediaCell.subheaderLabel.text = step.subheader
+            }
+            
             return procedureHeaderSubMediaCell
         case .headerSubVid:
             // TODO: implement integrated video
             return UICollectionViewCell()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionElementKindSectionHeader:
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerView", for: indexPath)
+            return headerView
+        default:
+            return UICollectionReusableView()
         }
     }
 

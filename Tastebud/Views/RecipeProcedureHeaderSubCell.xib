@@ -12,15 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeProcedureHeaderSubCell" id="MvN-hR-xpQ" customClass="RecipeProcedureHeaderSubCell" customModule="sousChef" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="415" height="181"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeProcedureHeaderSubCell" id="MvN-hR-xpQ" customClass="RecipeProcedureHeaderSubCell" customModule="Tastebud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="125"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                <rect key="frame" x="0.0" y="0.0" width="415" height="181"/>
+                <rect key="frame" x="0.0" y="0.0" width="415" height="125"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wts-UH-nBz">
-                        <rect key="frame" x="0.0" y="0.0" width="415" height="181"/>
+                        <rect key="frame" x="0.0" y="0.0" width="415" height="125"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.85000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="lmc-91-FWz">
                                 <rect key="frame" x="32" y="93" width="351" height="24"/>
@@ -38,7 +38,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="lmc-91-FWz" secondAttribute="trailing" constant="32" id="0kY-nV-wFU"/>
-                            <constraint firstAttribute="bottom" secondItem="lmc-91-FWz" secondAttribute="bottom" constant="64" id="Kun-hc-0Vh"/>
+                            <constraint firstAttribute="bottom" secondItem="lmc-91-FWz" secondAttribute="bottom" constant="8" id="Kun-hc-0Vh"/>
                             <constraint firstItem="lmc-91-FWz" firstAttribute="leading" secondItem="wts-UH-nBz" secondAttribute="leading" constant="32" id="WX3-0I-wA1"/>
                             <constraint firstItem="UQG-wN-jMk" firstAttribute="top" secondItem="wts-UH-nBz" secondAttribute="top" constant="32" id="X5a-BR-kJ2"/>
                             <constraint firstItem="UQG-wN-jMk" firstAttribute="leading" secondItem="wts-UH-nBz" secondAttribute="leading" constant="32" id="YB9-iC-lJw"/>
